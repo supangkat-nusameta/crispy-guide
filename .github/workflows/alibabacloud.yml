@@ -115,8 +115,8 @@ jobs:
         username: supangkat@5976564792499691
         password: Supangkat123
         region-id: "${{ env.REGION_ID }}"
-        access-key-id: "${{ secrets.ACCESS_KEY_ID }}"
-        access-key-secret: "${{ secrets.ACCESS_KEY_SECRET }}"
+        # access-key-id: "${{ secrets.ACCESS_KEY_ID }}"
+        # access-key-secret: "${{ secrets.ACCESS_KEY_SECRET }}"
         instance-id: "${{ env.ACR_EE_INSTANCE_ID }}"
     
         # 2.2 (Optional) Build and push image ACR EE
