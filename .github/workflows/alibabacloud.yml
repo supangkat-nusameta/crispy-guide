@@ -59,12 +59,35 @@ jobs:
     - run: yarn test
 
     # 1.1 Login to ACR
-    - name: Login to ACR with the AccessKey pair
-      uses: aliyun/acr-login@v1
+    - name: Alibaba Cloud Container Registry (ACR) Login
+    # You may pin to the exact commit or the version.
+    # uses: aliyun/acr-login@b55d70f7dbd5f5a5bcdbdd3f12e10452e98cc63b
+      uses: aliyun/acr-login@v1.0.5
       with:
-        region-id: "${{ env.REGION_ID }}"
-        access-key-id: "${{ secrets.ACCESS_KEY_ID }}"
-        access-key-secret: "${{ secrets.ACCESS_KEY_SECRET }}"
+    # Container registry username
+       username: supangkat@5976564792499691 
+    # Container registry password
+       password: Supangkat123 
+    # Access key id
+       access-key-id: "${{ secrets.ACCESS_KEY_ID }}" 
+    # Access key secret
+       access-key-secret: "${{ secrets.ACCESS_KEY_SECRET }}" 
+    # STS token
+      #  security-token: # optional, default is 
+    # Region id
+       region-id: "${{ env.REGION_ID }}"
+    # Registry instance id
+       instance-id: cri-96ndj4isyv76pwum
+    # Container registry server url
+       login-server: gamebox-002-registry.ap-southeast-5.cr.aliyuncs.com/eka/cms2
+
+
+    # - name: Login to ACR with the AccessKey pair
+    #   uses: aliyun/acr-login@v1
+    #   with:
+    #     region-id: "${{ env.REGION_ID }}"
+    #     access-key-id: "${{ secrets.ACCESS_KEY_ID }}"
+    #     access-key-secret: "${{ secrets.ACCESS_KEY_SECRET }}"
 
     # 1.2 Buid and push image to ACR
     - name: Build and push image to ACR
