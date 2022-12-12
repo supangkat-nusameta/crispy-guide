@@ -33,7 +33,7 @@ env:
   ACK_CLUSTER_ID: cff769c615b1c4bacb6defbb95a92e931
   ACK_DEPLOYMENT_NAME: eka-deployment
  
-  ACR_EE_REGISTRY: gamebox-002-registry.ap-southeast-5.cr.aliyuncs.com
+  ACR_EE_REGISTRY: gamebox-002-registry.ap-southeast-5.cr.aliyuncs.com/eka/cms2
   ACR_EE_INSTANCE_ID: cri-96ndj4isyv76pwum
   ACR_EE_NAMESPACE: eka
   ACR_EE_IMAGE: cms2
