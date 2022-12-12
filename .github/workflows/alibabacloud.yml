@@ -26,10 +26,10 @@ on:
 # Environment variables available to all jobs and steps in this workflow.
 env:
   REGION_ID: ap-southeast-5
-  REGISTRY: gamebox-002-registry.ap-southeast-5.cr.aliyuncs.com
-  NAMESPACE: eka
-  IMAGE: cms2
-  TAG: ${{ github.sha }}
+  # REGISTRY: gamebox-002-registry.ap-southeast-5.cr.aliyuncs.com
+  # NAMESPACE: eka
+  # IMAGE: cms2
+  # TAG: ${{ github.sha }}
   ACK_CLUSTER_ID: cff769c615b1c4bacb6defbb95a92e931
   ACK_DEPLOYMENT_NAME: eka-deployment
  
