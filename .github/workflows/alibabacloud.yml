@@ -30,8 +30,8 @@ env:
   # NAMESPACE: eka
   # IMAGE: cms2
   TAG: ${{ github.sha }}
-  ACK_CLUSTER_ID: cff769c615b1c4bacb6defbb95a92e931
-  ACK_DEPLOYMENT_NAME: eka-deployment
+  # ACK_CLUSTER_ID: cff769c615b1c4bacb6defbb95a92e931
+  # ACK_DEPLOYMENT_NAME: eka-deployment
  
   ACR_EE_REGISTRY: gamebox-002-registry.ap-southeast-5.cr.aliyuncs.com
   ACR_EE_INSTANCE_ID: cri-96ndj4isyv76pwum
@@ -110,7 +110,10 @@ jobs:
     - name: Login to ACR EE with the AccessKey pair
       uses: aliyun/acr-login@v1
       with:
-        login-server: "https://${{ env.ACR_EE_REGISTRY }}"
+        #login-server: "https://${{ env.ACR_EE_REGISTRY }}"
+        login-server: gamebox-002-registry.ap-southeast-5.cr.aliyuncs.com
+        username: supangkat@5976564792499691
+        password: Supangkat123
         region-id: "${{ env.REGION_ID }}"
         access-key-id: "${{ secrets.ACCESS_KEY_ID }}"
         access-key-secret: "${{ secrets.ACCESS_KEY_SECRET }}"
