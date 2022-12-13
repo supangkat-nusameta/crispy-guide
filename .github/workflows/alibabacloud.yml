@@ -58,7 +58,7 @@ jobs:
       name: Run crispy test
     - run: yarn test
 
-    ## # 1.1 Login to ACR
+    # # 1.1 Login to ACR
     # - name: Alibaba Cloud Container Registry (ACR) Login
     # # You may pin to the exact commit or the version.
     # # uses: aliyun/acr-login@b55d70f7dbd5f5a5bcdbdd3f12e10452e98cc63b
