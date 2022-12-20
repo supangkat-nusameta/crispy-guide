@@ -28,6 +28,7 @@ env:
   REGION_ID: ap-southeast-5
   REGISTRY: gamebox-002-registry.ap-southeast-5.cr.aliyuncs.com
   NAMESPACE: supangkat
+  IMAGE: cms2
   TAG: ${{ github.sha }}
   ACK_CLUSTER_ID: c0ae8747ae3f14ba39f3f2b0479c93a02
   ACK_DEPLOYMENT_NAME: eka-deployment
