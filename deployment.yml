@@ -33,7 +33,7 @@ spec:
       - name: eka-deployment
         image: REGISTRY/NAMESPACE/IMAGE:TAG
         ports:
-        - containerPort: 8080
+        - containerPort: 49160
         resources:
           requests:
             cpu: 100m
